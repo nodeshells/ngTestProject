@@ -1,5 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -27,5 +27,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to NgTestCodeProject!');
+  });
+
+  it('should equals Hello World!', () => {
+    expect('Hello World!').toEqual('Hello World!');
+  });
+
+  it('should equals Hello World!', () => {
+    expect('Hello World!').toEqual('Hell World!');
   });
 });
